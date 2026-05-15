@@ -1,0 +1,392 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4facfe,
+      #00f2fe
+    );
+
+  min-height: 100vh;
+
+  color: #111827;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+   CARD STYLES
+========================= */
+
+.card {
+
+  border-radius: 25px !important;
+
+  backdrop-filter: blur(12px);
+
+  background:
+    rgba(255, 255, 255, 0.92) !important;
+
+  transition: all 0.35s ease;
+
+  overflow: hidden;
+
+  border: none !important;
+}
+
+.card:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.text-primary {
+
+  color: #2563eb !important;
+}
+
+/* =========================
+   PREMIUM INPUTS
+========================= */
+
+.form-control,
+.form-select,
+textarea {
+
+  border-radius: 18px !important;
+
+  padding: 14px 18px !important;
+
+  font-size: 16px !important;
+
+  font-weight: 500;
+
+  border:
+    2px solid #dbeafe !important;
+
+  background: #ffffff !important;
+
+  color: #111827 !important;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   INPUT PLACEHOLDER
+========================= */
+
+.form-control::placeholder,
+textarea::placeholder {
+
+  color: #6b7280;
+
+  font-weight: 400;
+
+  letter-spacing: 0.3px;
+}
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+
+  border-color: #4facfe !important;
+
+  box-shadow:
+    0 0 18px rgba(79,172,254,0.35) !important;
+
+  transform: scale(1.01);
+
+  outline: none !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+
+  border-radius: 35px !important;
+
+  font-weight: 600 !important;
+
+  padding:
+    10px 24px !important;
+
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+
+  border: none !important;
+}
+
+.btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.18);
+}
+
+/* PRIMARY BUTTON */
+
+.btn-primary {
+
+  background:
+    linear-gradient(
+      to right,
+      #667eea,
+      #764ba2
+    ) !important;
+
+  color: white !important;
+}
+
+/* DARK BUTTON */
+
+.btn-dark {
+
+  background:
+    linear-gradient(
+      to right,
+      #141e30,
+      #243b55
+    ) !important;
+
+  color: white !important;
+}
+
+/* LIGHT BUTTON */
+
+.btn-light {
+
+  background: white !important;
+
+  color: #111827 !important;
+}
+
+/* DANGER BUTTON */
+
+.btn-danger {
+
+  background:
+    linear-gradient(
+      to right,
+      #ff416c,
+      #ff4b2b
+    ) !important;
+
+  color: white !important;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.table thead {
+
+  background:
+    linear-gradient(
+      to right,
+      #141e30,
+      #243b55
+    ) !important;
+
+  color: white;
+
+  font-size: 15px;
+}
+
+.table tbody tr {
+
+  transition: 0.3s ease;
+}
+
+.table tbody tr:hover {
+
+  background-color: #eef8ff;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+
+  padding: 10px 16px;
+
+  border-radius: 20px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.bg-warning,
+.bg-danger,
+.bg-success {
+
+  border-radius: 20px !important;
+
+  color: #111827 !important;
+
+  font-weight: 700;
+}
+
+/* =========================
+   TOASTIFY
+========================= */
+
+.Toastify__toast {
+
+  border-radius: 15px !important;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: 500;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background:
+    linear-gradient(
+      to bottom,
+      #4facfe,
+      #00f2fe
+    );
+
+  border-radius: 20px;
+}
+
+/* =========================
+   LANDING PAGE HERO
+========================= */
+
+.hero-title {
+
+  font-size: 4rem;
+
+  font-weight: 700;
+
+  color: white;
+
+  text-shadow:
+    0 4px 12px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+
+  color: white;
+
+  font-size: 1.3rem;
+
+  font-weight: 400;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero-title {
+
+    font-size: 2.5rem;
+  }
+
+  h1 {
+
+    font-size: 2rem !important;
+  }
+
+  .table {
+
+    font-size: 0.8rem;
+  }
+
+  .btn {
+
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+
+    font-size: 14px !important;
+  }
+}
